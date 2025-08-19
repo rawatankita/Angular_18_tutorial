@@ -1,9 +1,11 @@
 import { AsyncPipe, DatePipe, JsonPipe, LowerCasePipe, TitleCasePipe, UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
+import { interval, map, Observable } from 'rxjs';
+import { NaPipe } from '../../../pipes/na-pipe';
 
 @Component({
   selector: 'app-pipe',
-  imports: [AsyncPipe,JsonPipe,DatePipe,UpperCasePipe,LowerCasePipe,TitleCasePipe],
+  imports: [NaPipe,AsyncPipe,JsonPipe,DatePipe,UpperCasePipe,LowerCasePipe,TitleCasePipe],
   templateUrl: './pipe.html',
   styleUrl: './pipe.css'
 })
@@ -11,6 +13,8 @@ export class Pipe {
    firstName: string = "this is a demo session";
 
   currentDate: Date = new Date();
+
+  currentTime : Observable<Date> = new Observable<Date>;
 
   student: any = {
     name:'Chetan',
@@ -21,7 +25,7 @@ export class Pipe {
   currentRole: string = '';
 
   constructor() { 
-   
+   this.currentTime= interval(1000).pipe(map(() => new Date()));
   
   }
 

@@ -1,67 +1,70 @@
-<div class="mt-2 p-2 bg-secondary text-white rounded">
-    <h4>Pipe In Angular</h4>
-    <h3>Default Pipe & Custom Pipe  </h3> 
-    <h6>{{currentRole}}</h6>
+<div class="mt-3 p-3 bg-secondary text-white rounded shadow-sm">
+  <h4 class="mb-1">Pipe in Angular</h4>
+  <h3 class="mb-2">Default Pipe & Custom Pipe</h3>
+  <h6>{{currentRole}}</h6>
 </div>
 
-<div class="row">
-    <div class="col-3">
-        Original Value -  {{firstName}}
-        <br/>
-        after Pipe - {{firstName | uppercase }}
+<div class="container-fluid mt-4">
+  <div class="row g-3">
+    <!-- String Pipes -->
+    <div class="col-md-3 pipe-card">
+      <h5>Uppercase</h5>
+      <p><strong>Original:</strong> {{firstName}}</p>
+      <p><strong>Transformed:</strong> {{firstName | uppercase}}</p>
     </div>
-    <div class="col-3">
-        Original Value -  {{firstName}}
-        <br/>
-        after Pipe -{{firstName | lowercase }}
+    <div class="col-md-3 pipe-card">
+      <h5>Lowercase</h5>
+      <p><strong>Original:</strong> {{firstName}}</p>
+      <p><strong>Transformed:</strong> {{firstName | lowercase}}</p>
     </div>
-    <div class="col-3">
-        Original Value - {{firstName}}
-        <br/>
-        after Pipe -{{firstName | titlecase }}
+    <div class="col-md-3 pipe-card">
+      <h5>Titlecase</h5>
+      <p><strong>Original:</strong> {{firstName}}</p>
+      <p><strong>Transformed:</strong> {{firstName | titlecase}}</p>
     </div>
-    <div class="col-3">
-        Original Value - 
-        <br/>
-        after Pipe -
+    <div class="col-md-3 pipe-card">
+      <h5>Custom Pipe</h5>
+      <p><strong>Original:</strong></p>
+      <p><strong>Transformed:</strong></p>
     </div>
-</div>
-<div class="row pt-3">
-    <div class="col-3">
-        Original Value - {{currentDate}}
-        <br/>
-        after Pipe -{{currentDate |date}}
+
+    <!-- Date Pipes -->
+    <div class="col-md-3 pipe-card">
+      <h5>Date (Default)</h5>
+      <p><strong>Original:</strong> {{currentDate}}</p>
+      <p><strong>Transformed:</strong> {{currentDate | date}}</p>
     </div>
-    <div class="col-3">
-        Original Value - {{currentDate |date:'dd-MM-yyyy'}}
-        <br/>
-        after Pipe --{{currentDate |date:'dd-MM-yy'}}
+    <div class="col-md-3 pipe-card">
+      <h5>Date Format</h5>
+      <p><strong>Original:</strong> {{currentDate | date:'dd-MM-yyyy'}}</p>
+      <p><strong>Transformed:</strong> {{currentDate | date:'dd-MM-yy'}}</p>
     </div>
-    <div class="col-3">
-        Original Value - {{currentDate |date:'dd-MMM-yy'}}
-        <br/>
-        after Pipe -{{currentDate |date:'dd/MMM/yy'}}
+    <div class="col-md-3 pipe-card">
+      <h5>Date Format</h5>
+      <p><strong>Original:</strong> {{currentDate | date:'dd-MMM-yy'}}</p>
+      <p><strong>Transformed:</strong> {{currentDate | date:'dd/MMM/yy'}}</p>
     </div>
-    <div class="col-3">
-        Original Value - 
-        <br/>
-        after Pipe -
+    <div class="col-md-3 pipe-card">
+      <h5>Custom Date Pipe</h5>
+      <p><strong>Original:</strong></p>
+      <p><strong>Transformed:</strong></p>
     </div>
-</div>
-<div class="row">
-    <div class="col-3">
-        Original Value - {{student}}
-        <br/>
-        after Pipe - {{student|json}}
+
+    <!-- JSON & Async -->
+    <div class="col-md-3 pipe-card">
+      <h5>JSON Pipe</h5>
+      <p><strong>Original:</strong> {{student}}</p>
+      <p><strong>Transformed:</strong> {{student | json}}</p>
     </div>
-    <div class="col-3">
-       <!--  Original Value - {{currentTime}} -->
-        <br/>
-      <!--   after Pipe - {{currentTime | async | date:'hh:mm:ss'}} -->
+    <div class="col-md-3 pipe-card">
+      <h5>Async Pipe</h5>
+      <p><strong>Original:</strong> {{currentTime}} </p>
+      <p><strong>Transformed:</strong>  {{currentTime | async | date:'hh:mm:ss'}} </p>
     </div>
-    <div class="col-3">
-        Original Value - {{student.state}}
-        <br/>
-        <!-- after Pipe - {{student.state |na}} -->
+    <div class="col-md-3 pipe-card">
+      <h5>Custom Pipe (NA)</h5>
+      <p><strong>Original:</strong> {{student.state}}</p>
+      <p><strong>Transformed:</strong> {{student.state | na}} </p>
     </div>
+  </div>
 </div>
