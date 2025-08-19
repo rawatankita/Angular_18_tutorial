@@ -5,10 +5,11 @@ import { EmployeeList } from './components/employee-list/employee-list';
 import { DataBinding } from './components/data-binding/data-binding';
 import { FormsModule } from '@angular/forms';
 import { StructuralDir } from './components/directive/structural-dir/structural-dir/structural-dir';
+import { AttributeDirective } from './components/directive/attribute-directive/attribute-directive/attribute-directive';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,FormsModule,DataBinding,StructuralDir],
+  imports: [RouterOutlet,FormsModule,DataBinding,StructuralDir,AttributeDirective],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
