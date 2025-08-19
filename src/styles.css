@@ -1,4 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 .text-primary {
-    color: gold;
+    color: goldenrod;
+}
+.width-50 {
+    width: 50%;
+}
+.form-control {
+    border: 1px solid !important;
+}
+.form-select {
+    border: 1px solid !important;
 }
