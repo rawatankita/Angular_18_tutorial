@@ -2,10 +2,12 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { AddEmployee } from './components/add-employee/add-employee';
 import { EmployeeList } from './components/employee-list/employee-list';
+import { DataBinding } from './components/data-binding/data-binding';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,AddEmployee,EmployeeList],
+  imports: [RouterOutlet,FormsModule,DataBinding],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
