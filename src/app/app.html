@@ -1,8 +1,31 @@
-<table>
-  <h1>Angular 18 Beginnner to Master</h1>
-  <tr><app-data-binding></app-data-binding></tr>
-  <tr><app-structural-dir></app-structural-dir></tr>
-  <tr><app-attribute-directive></app-attribute-directive></tr>
-  <!-- <tr><app-add-employee></app-add-employee></tr>
-  <tr><app-employee-list></app-employee-list></tr> -->
-</table>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Angular 18 Beginner to Master</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="add-employee">Add Employee</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="emp-list">Employee List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="structural-dir">Structural Directive</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="attributedirective">Attribute Directive</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
