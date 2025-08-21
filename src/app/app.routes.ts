@@ -9,6 +9,8 @@ import { For } from './components/controlFlow/for/for/for';
 import { Pipe } from './components/pipe/pipe/pipe';
 import { Template } from './components/forms/template/template/template';
 import { Reactive } from './components/forms/reactive/reactive/reactive';
+import { GetApi } from './components/apiIntegration/get-api/get-api';
+import { PostApi } from './components/apiIntegration/post-api/post-api';
 
 export const routes: Routes = [
      {
@@ -50,5 +52,13 @@ export const routes: Routes = [
     {
                 path: 'reactive',
                 component: Reactive
+    },
+    {
+                path: 'get-api',
+                component: GetApi
+    },
+    {
+                path: 'post-api',
+                component: PostApi
     },
 ];

@@ -9,33 +9,47 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="add-employee">Add Employee</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="emp-list">Employee List</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="structural-dir">Structural Directive</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="attributedirective">Attribute Directive</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="for">For</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="if-else">If Else</a>
-        </li>
+         <li class="nav-item" >
+            <a class="nav-link" routerLink="data-binding">Data-Binding</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" routerLink="signal">Signal</a>
+          </li>
+        <li class="nav-item dropdown"  >
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Directive</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="structural-dir">Structiral Directive</a></li>
+              <li><a class="dropdown-item" routerLink="attributedirective">Attribute Directive</a></li> 
+              <li><a class="dropdown-item" routerLink="add-emp">add-emp</a></li> 
+              <li class="nav-item">
+              <a class="nav-link" routerLink="emp-list">Employee List</a>
+            </li>
+            </ul>
+          </li>
+       <li class="nav-item dropdown"  >
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Control Flow</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="if-else"> <span>&#64;</span>if</a></li>
+              <li><a class="dropdown-item" routerLink="for"> <span>&#64;</span>for, switch</a></li> 
+            </ul>
+          </li> 
         <li class="nav-item">
           <a class="nav-link" routerLink="pipe">Pipe</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="template">Template</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="reactive">Reactive</a>
-        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Forms</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="template">Template Form</a></li>
+              <li><a class="dropdown-item" routerLink="reactive">Reactive Form</a></li> 
+            </ul>
+          </li>
+        <li class="nav-item dropdown"  >
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">API -HttpClient</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="get-api">Get API</a></li>
+              <li><a class="dropdown-item" routerLink="post-api">Post API</a></li> 
+            </ul>
+          </li>
       </ul>
     </div>
   </div>
